@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Import font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Import ikon-ikon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sandy Arib Ahmad</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>Portfolio Page</h1>
+      <ul class="nav-links">
+        <li><i class="bi bi-linkedin"></i> <a href="/">Linkedin</a></li>
+        <li><i class="bi bi-github"></i> <a href="/">GitHub</a></li>
+        <li><i class="bi bi-instagram"></i> <a href="/">Instagram</a></li>
+        <li><i class="bi bi-facebook"></i> <a href="/">Facebook</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header display-grid">
+      <div class="header-text">
+        <div class="header-text-content">
+        <!-- About Me -->
+          <h1>Sandy Arib Ahmad</h1>
+          <h2>Front-End Developer</h2>
+          <p>
+            Bachelor of Informatics from the University of Sriwijaya. I am
+            experienced in creating and designing websites using HTML, CSS, and
+            Bootstrap.
+          </p>
+        </div>
+      </div>
+      <div class="header-img">
+        <img src="./Assets/foto_developer.png" alt="foto-profil" />
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+    <!-- Projects -->
+      <section class="container">
+        <h2 class="title">Projects I Have Worked On</h2>
+        <div class="display-grid-rows">
+          <div class="card">
+            <h3>
+              Project 1 <i class="bi bi-filetype-html"></i>
+              <i class="bi bi-filetype-css"></i>
+            </h3>
+            <p>Portfolio page created using HTML and CSS</p>
+          </div>
+          <div class="card">
+            <h3>
+              Project 2 <i class="bi bi-filetype-html"></i>
+              <i class="bi bi-filetype-css"></i>
+            </h3>
+            <p>Landing page created using HTML and CSS</p>
+          </div>
+          <div class="card">
+            <h3>
+              Project 3 <i class="bi bi-filetype-html"></i>
+              <i class="bi bi-filetype-css"></i> <i class="bi bi-bootstrap"></i>
+            </h3>
+            <p>Landing page created using HTML, CSS, and Bootstrap</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimony -->
+      <section class="container">
+        <h2 class="title">Testimony</h2>
+        <div class="display-grid-columns center">
+          <div class="testimony-card">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h3>Recommended</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="Assets/female-dev.png" alt="male-dev" class="dev-photo" />
+            <p>Olivia Blackwood</p>
+          </div>
+          <div class="testimony-card">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h3>Great Service!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="Assets/female-dev.png" alt="male-dev" class="dev-photo" />
+            <p>Isabella Chen</p>
+          </div>
+          <div class="testimony-card">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h3>Amazing Design!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="Assets/female-dev.png" alt="male-dev" class="dev-photo" />
+            <p>Elijah Winters</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me-->
+      <section class="container text-center">
+        <h2 class="title">Contact Me!</h2>
+        <div class="center">
+          <div class="input-card">
+            <form>
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input class="input" type="text" name="name" id="name" />
+              </div>
+              <div class="input-group">
+                <label for="subject">Subject</label>
+                <input class="input" type="text" name="subject" id="subject" />
+              </div>
+              <div class="input-group">
+                <label for="message">Message</label>
+                <textarea class="input" name="message" id="message"></textarea>
+              </div>
+              <button class="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Sandy Arib Ahmad - Developed Using HTML and CSS</p>
+    </footer>
+  </body>
+</html>

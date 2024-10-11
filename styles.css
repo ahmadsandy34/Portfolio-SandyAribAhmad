@@ -1,0 +1,253 @@
+/* Jenis font Roboto regular */
+@font-face {
+  font-family: Roboto;
+  src: url(Assets/Roboto/Roboto-Regular.ttf);
+}
+
+/* Jenis font Roboto tipis */
+@font-face {
+  font-family: Roboto;
+  src: url(Assets/Roboto/Roboto-Light.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+
+/* Jenis font Roboto tebal */
+@font-face {
+  font-family: Roboto;
+  src: url(Assets/Roboto/Roboto-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Membuat variabel untuk warna yang digunakan */
+:root {
+  --text: #ffffff; /* Putih */
+  --card: #89cff0; /* Biru muda */
+  --bg-primary: #0c2340; /* Biru tua */
+  --bg-secondary: #081828; /* Biru gelap */
+}
+
+/* Mengatur font yang digunakan dan membuat ukuran total setiap elemen sudah termasuk padding dan border */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/* Mengatur warna latar belakang dan warna teks pada body */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text);
+}
+
+/* Mengatur tampilan bar navigasi */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+}
+
+/* Mengatur elemen h1 pada navbar */
+.navbar h1 {
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+/* Mengatur elemen navigasi */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+/* Mengatur elemen list navigasi */
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Mengatur elemen anchor di dalam elemen navigasi */
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 200;
+}
+
+/* Mengatur elemen anchor di dalam elemen navigasi saat dihover */
+.nav-links li a:hover {
+  color: var(--card);
+}
+
+/* Mengatur elemen untuk menjadi tampilan grid horizontal*/
+.display-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Mengatur tampilan elemen header */
+.header {
+  height: 50vh;
+}
+
+/* Mengatur tampilan elemen text pada header */
+.header-text {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* Mengatur tampilan elemen h1 pada header */
+.header-text-content h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Mengatur tampilan elemen h2 pada header */
+.header-text-content h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+/* Mengatur tampilan elemen p pada header */
+.header-text-content p {
+  font-size: 0.9rem;
+  width: 50%;
+  line-height: 1.5;
+}
+
+/* Mengatur tampilan elemen gambar pada header */
+.header-img {
+  display: flex;
+  justify-content: start;
+  margin: 50px 0;
+}
+
+/* Mengatur kontainer */
+.container {
+  margin: 30px 100px;
+}
+
+/* Mengatur elemen untuk menjadi tampilan grid vertikal 3 baris */
+.display-grid-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* Mengatur tampilan elemen card */
+.card {
+  border-radius: 10px;
+  background-color: var(--card);
+  height: 150px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/* Mengatur tampilan elemen title */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Mengatur tampilan elemen h3 pada card dan testimony-card */
+.card h3,
+.testimony-card h3 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+/* Mengatur tampilan elemen p pada card dan testimony-card */
+.card p,
+.testimony-card p {
+  font-size: 1.2rem;
+}
+
+/* Mengatur elemen untuk menjadi tampilan grid horizontal 3 kolom */
+.display-grid-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Menengahkan text elemen */
+.text-center {
+  text-align: center;
+}
+
+/* Mengatur tampilan elemen testimony-card */
+.testimony-card {
+  border-radius: 10px;
+  background-color: var(--card);
+  margin-right: 30px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+/* Mengatur tampilan foto di testimony-card */
+.dev-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Mengatur tampilan elemen input-card */
+.input-card {
+  border-radius: 10px;
+  background-color: var(--card);
+  height: 400px;
+  width: 500px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/* Menengahkan elemen */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mengatur tampilan elemen input */
+.input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+/* Mengatur tampilan elemen input-group */
+.input-group {
+  margin-top: 20px;
+}
+
+/* Mengatur tampilan elemen label pada input-group */
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Mengatur tampilan elemen button */
+.button {
+  background-color: var(--bg-secondary);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--text);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  width: 70%;
+}
+
+/* Mengatur tampilan elemen footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--bg-secondary);
+}
