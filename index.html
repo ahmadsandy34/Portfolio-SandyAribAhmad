@@ -36,9 +36,12 @@
 
     <!-- Header -->
     <header class="header display-grid">
+      <div class="header-img2">
+        <img src="./Assets/foto_developer.png" alt="foto-profil" />
+      </div>
       <div class="header-text">
         <div class="header-text-content">
-        <!-- About Me -->
+          <!-- About Me -->
           <h1>Sandy Arib Ahmad</h1>
           <h2>Front-End Developer</h2>
           <p>
@@ -55,7 +58,7 @@
 
     <!-- Main -->
     <main>
-    <!-- Projects -->
+      <!-- Projects -->
       <section class="container">
         <h2 class="title">Projects I Have Worked On</h2>
         <div class="display-grid-rows">
@@ -131,21 +134,38 @@
 
       <!-- Contact Me-->
       <section class="container text-center">
-        <h2 class="title">Contact Me!</h2>
+        <h2 class="title">Contact Me</h2>
         <div class="center">
           <div class="input-card">
             <form>
               <div class="input-group">
-                <label for="name">Name</label>
-                <input class="input" type="text" name="name" id="name" />
+                <label for="name">Name :</label>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name here..."
+                />
               </div>
               <div class="input-group">
-                <label for="subject">Subject</label>
-                <input class="input" type="text" name="subject" id="subject" />
+                <label for="subject">Email :</label>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email here..."
+                />
               </div>
               <div class="input-group">
-                <label for="message">Message</label>
-                <textarea class="input" name="message" id="message"></textarea>
+                <label for="message">Message :</label>
+                <textarea
+                  class="input"
+                  name="message"
+                  id="message"
+                  placeholder="Your message here..."
+                ></textarea>
               </div>
               <button class="button">Submit</button>
             </form>

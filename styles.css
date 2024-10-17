@@ -95,6 +95,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin: 0px 100px;
 }
 
 /* Mengatur tampilan elemen h1 pada header */
@@ -124,7 +125,13 @@ body {
 .header-img {
   display: flex;
   justify-content: start;
+  align-items: center;
   margin: 50px 0;
+}
+
+/* Mengatur tampilan elemen gambar 2 pada header */
+.header-img2{
+  display: none;
 }
 
 /* Mengatur kontainer */
@@ -193,6 +200,13 @@ body {
   border-radius: 50%;
 }
 
+/* Menengahkan elemen */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Mengatur tampilan elemen input-card */
 .input-card {
   border-radius: 10px;
@@ -201,13 +215,6 @@ body {
   width: 500px;
   margin: 20px 0;
   padding: 10px;
-}
-
-/* Menengahkan elemen */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Mengatur tampilan elemen input */
@@ -232,6 +239,10 @@ body {
   text-align: left;
 }
 
+#message {
+  resize: none;
+}
+
 /* Mengatur tampilan elemen button */
 .button {
   background-color: var(--bg-secondary);
@@ -250,4 +261,73 @@ body {
   text-align: center;
   padding: 20px 0;
   background-color: var(--bg-secondary);
+}
+
+/* Mengatur elemen pada tampilan layar kecil */
+@media only screen and (max-width: 768px) {
+  .display-grid,
+  .display-grid-columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar h1 {
+    margin: 10px auto;
+  }
+
+  .navbar li {
+    margin: 0 5px;
+    text-align: center;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header-text {
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .header-text-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-text-content p {
+    width: 100%;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .header-img2 {
+    display: grid;
+    margin: 20px auto 0px;
+  }
+
+  .container {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card,
+  .testimony-card {
+    margin: 20px auto;
+    height: auto;
+    width: 100%;
+  }
 }
