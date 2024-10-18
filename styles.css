@@ -164,7 +164,7 @@ body {
 .card h3,
 .testimony-card h3 {
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 /* Mengatur tampilan elemen p pada card dan testimony-card */
@@ -239,6 +239,7 @@ body {
   text-align: left;
 }
 
+/* Mengatur tampilan elemen textarea */
 #message {
   resize: none;
 }
@@ -254,6 +255,12 @@ body {
   font-weight: 700;
   margin-top: 20px;
   width: 70%;
+  cursor: pointer;
+}
+
+/* Mengatur tampilan elemen button saat dihover */
+.button:hover {
+  background-color: var(--bg-primary);
 }
 
 /* Mengatur tampilan elemen footer */
@@ -263,14 +270,22 @@ body {
   background-color: var(--bg-secondary);
 }
 
+.mode {
+  text-decoration: none;
+  background-color: var(--bg-secondary);
+  color: var(--text);
+}
+
 /* Mengatur elemen pada tampilan layar kecil */
 @media only screen and (max-width: 768px) {
+  /* Mengatur tampilan elemen display-grid dan display-grid-columns menjadi kebawah */
   .display-grid,
   .display-grid-columns {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
+  /* Mengatur tampilan elemen navbar */
   .navbar {
     display: flex;
     flex-direction: column;
@@ -281,10 +296,11 @@ body {
   }
 
   .navbar li {
-    margin: 0 5px;
+    margin: 0 15px;
     text-align: center;
   }
 
+  /* Mengatur tampilan elemen header */
   .header {
     height: auto;
   }
@@ -315,15 +331,18 @@ body {
     margin: 20px auto 0px;
   }
 
+  /* Mengatur tampilan container */
   .container {
     margin: 20px auto;
     text-align: center;
   }
-
+  
+  /* Mengatur element title */
   .title {
     font-size: 1.5rem;
   }
 
+  /* Mengatur tampilan elemen card dan testimony-card */
   .card,
   .testimony-card {
     margin: 20px auto;

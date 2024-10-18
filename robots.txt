@@ -1,0 +1,3 @@
+# Memberi tahu mesin pencari bahwa direktori Assets tidak boleh diakses
+User-agent: *
+Disallow: /Assets/

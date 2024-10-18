@@ -27,10 +27,37 @@
     <nav class="navbar">
       <h1>Portfolio Page</h1>
       <ul class="nav-links">
-        <li><i class="bi bi-linkedin"></i> <a href="/">Linkedin</a></li>
-        <li><i class="bi bi-github"></i> <a href="/">GitHub</a></li>
-        <li><i class="bi bi-instagram"></i> <a href="/">Instagram</a></li>
-        <li><i class="bi bi-facebook"></i> <a href="/">Facebook</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sandy-arib-ahmad-2bb3b6298/"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/ahmadsandy34" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/ahmadsandyarib/?igsh=aGFmeGVyOTY1ZDh5"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/sandy.aribahmad?rdid=wsx1eXtXkPJZ0SK9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FXAXRncPuTQSkjcD6%2F"
+            target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="mode" id="dark" onclick="changeMode(event)">
+            <i class="bi bi-brightness-high"></i>
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -46,7 +73,7 @@
           <h2>Front-End Developer</h2>
           <p>
             Bachelor of Informatics from the University of Sriwijaya. I am
-            experienced in creating and designing websites using HTML, CSS, and
+            experienced in creating and designing websites using HTML, CSS, Javascript, and
             Bootstrap.
           </p>
         </div>
@@ -137,7 +164,7 @@
         <h2 class="title">Contact Me</h2>
         <div class="center">
           <div class="input-card">
-            <form>
+            <form id="postForm">
               <div class="input-group">
                 <label for="name">Name :</label>
                 <input
@@ -145,17 +172,19 @@
                   type="text"
                   name="name"
                   id="name"
+                  required
                   placeholder="Your name here..."
                 />
               </div>
               <div class="input-group">
-                <label for="subject">Email :</label>
+                <label for="subject">Subject :</label>
                 <input
                   class="input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email here..."
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  required
+                  placeholder="The subject here..."
                 />
               </div>
               <div class="input-group">
@@ -164,10 +193,11 @@
                   class="input"
                   name="message"
                   id="message"
+                  required
                   placeholder="Your message here..."
                 ></textarea>
               </div>
-              <button class="button">Submit</button>
+              <button class="button" type="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -176,7 +206,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2024 Sandy Arib Ahmad - Developed Using HTML and CSS</p>
+      <p>&copy; 2024 Sandy Arib Ahmad - Developed Using HTML, CSS, and Javascript</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
   </body>
 </html>
